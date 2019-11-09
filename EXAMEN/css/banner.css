@@ -1,0 +1,35 @@
+#banner {
+    margin-top: 110px;/*comenza desde abajo del header*/ 
+    position: relative;/*para que el contenedor (#banner .contenedor) se posicione en base a banner*/
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    font-size: 50px;
+    position: relative;
+}
+
+#banner .contenedor { /*contenedor dentro de banner*/
+    position: absolute;/*se posiciona de acuerdo o en base a banner*/
+    top: 80%; /*para que las flechas esten casi al final*/
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+
+#banner h2 {
+    font-size: 30px;
+    position: absolute;
+}
+
+/*Boton de play*/
+
+
+
+
+
+

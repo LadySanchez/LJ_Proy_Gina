@@ -1,0 +1,42 @@
+#blog {
+    display: flex;/*los formularios estaran en una sola linea*/
+    justify-content: center;
+    flex-wrap: wrap;/*los elementos que no caben se van debajo (bajan)*/
+}
+
+#blog article{
+    margin: 15px;/*las tablas estan separadas entre si por 15px*/
+}
+
+#blog table{
+    
+}
+
+#imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#imagenes article {
+    margin: 15px;
+}
+
+#imagenes img {
+    margin: 15px;
+    
+}
+
+#info .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#info {
+    background-color: #B0C4DE;
+}
+
+#info article {
+    margin: 10px;
+}
+

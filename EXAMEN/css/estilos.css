@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');/*importar fuente de google fonts*/
+
+@import url(menu.css);
+
+@import url(banner.css);
+
+@import url(carrusel.css);
+
+@import url(blog.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*cuando se le de border o pading a un elemento, esos elementos sean dentro del modelo de caja y no se salga (que los tamaños encajen)*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;/*El body tiene la fuente importada de google fonts*/
+}
+
+header {/*Parte de arriba (en donde está el menu)*/
+    width: 100%;
+    height: 150px;
+    color: dodgerblue;
+    background: white;
+    
+    position: fixed;/*Para que el menú se quede pegado (que esté estatico en su lugar cuando se baja o se sube)*/
+    top: 0;
+    left: 0;
+    z-index: 100;/*El menú esta sobre los demás elementos*/
+}
+
+/*Para el margen en todos los contenedores (que todo esté alineado)*/
+.contenedor { 
+    width: 98%;
+    margin: auto;
+}
+/*
+.logo { /*para que el logotipo flote
+    float: left;
+}*/
+
+header .contenedor {/*Para limpiar los float*/
+    display: table; /*El contenedor estara solo en la parte del menu*/
+}
+
+section {/*para todos los section*/
+    width: 100%;
+    margin-bottom: 25px;/*que exista una separación entre cada contenido*/
+}
+
+
+
+/*Estilos para Formulario 2*/
+		#login {
+			margin-top: 50px;
+			text-align:center;
+		}
+		form {
+			display:inline-block;
+		}
+		form>div {
+			position:relative;
+			width:250px;
+			margin-top:5px;
+		}
+		form>div>input {
+			box-sizing: border-box;
+			padding:10px 30px 10px 10px;
+			width:100%;
+			border:1px solid #ccc;
+			box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset;
+		}
+		form>div>img {
+			position:absolute;
+			right:10px;
+			top:12px;
+		}
+
+
+/*ANCLA*/
+a.regreso{
+            font-size: 20px;
+            
+            
+        }
+
+/*Imagenes*/
+img.efecto1 {/*Imagen en circulo que se acerca*/
+    opacity: .8;
+    -webkit-transition: all .6s ease;/* .6s tiempo en quitarse el efecto*/   
+}
+img.efecto1:hover {
+    opacity: 4;
+    border-radius: 200px;
+    box-shadow: 0px 0px 20px #ddd;
+}
+
+img.efecto2 {
+    transition: all 0.5s linear;
+}
+img.efecto2:hover {/*Imagen que se aleja*/
+    transform: scale(0.9);
+}
+
+img.efecto3 {
+    transition: all 0.5s linear;
+}
+img.efecto3:hover {/*Imagen que se acerca*/
+    transform: scale(1.4);
+}
+
+
+/*SUBMENU*/
+nav.submenu li ul{
+    list-style: none;
+    background-color: white;
+}
+
+nav.submenu  li a{
+    display: block;
+    
+}
+
+nav.submenu li a:hover{
+    background-color: antiquewhite;
+}
+
+nav.submenu ul{
+    display: none;
+}
+
+nav.submenu li:hover > ul {
+    display: block;
+}

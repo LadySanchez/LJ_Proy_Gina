@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>EXAMEN PARCIAL1 INDEX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"><!--Parte de la estructura básica de un archivo html-->
+    <!--Vinculacion de archivo css para iconos-->
+    <link rel="stylesheet" href="css/fontello.css">
+    <!--Vinculacion de archivo css para los estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <!--carrusel de imagenes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+
+<!--Formulario2-->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
+    
+</head>
+
+<body>
+    <header> 
+        <div class="inicio">
+            <table style="width: 100%">
+                  <tr>
+                   <!--Alineacion de texto a la izquierda-->
+                      <div><span style="float: right">&nbsp;<img src="images/mexico.png" alt="" style="width: 20px;height: 15px;"> <a href="" style="text-decoration: none">REGISTRARSE<a href="" class="icon-down-dir" style="text-decoration: none"></a></a></span></div>
+                    </tr>
+                    <tr>
+                     <!--Alineación de texto a la derecha-->
+                      <div><span style="float: right"> <a href="" style="text-decoration: none">LOGIN<a href="" class="icon-angle-double-right" style="text-decoration: none"></a> </a> &nbsp;</span></div>  
+                    </tr>
+                    <td>
+                       <div class="contenedor">
+                        <font color="dimgray"><h1>COMPECER <img class="efecto3" src="images/logo.jpg" style="width:60px;height:60px;"></h1></font>
+                        <input type="checkbox" id="menu-bar"><!--para trabajar el menú (es el boton para mostrar el menú)-->
+                        <label class="icon-menu" for="menu-bar"></label><!--desplegar el menú (se hace clic en el label y el imput de activa o se desactiva)-->
+                        <nav class="menu" style="font-size: 30px">
+                         <a href="pagina1.html">INICIO</a>
+                          <nav class="submenu"
+                            ><!--menú desplegable-->
+                             <li style="list-style: none;">
+                              <a id="aparece" href="">CERTIFICACIONES</a><ul>
+                               <li><a href="C.html">C++</a></li>
+                               <li><a href="JAVA.html">JAVA</a></li>
+                               <li><a href="CISCO.html">CISCO</a></li>
+                               <li><a href="MICROSOFT.html">MICROSOFT</a></li>
+                           </ul>
+                           
+                           </li>
+                          </nav>
+                           
+                           
+                           
+                           <nav class="submenu"
+                            ><!--menú desplegable-->
+                             <li style="list-style: none;">
+                              <a id="aparece" href="">CONTACTO</a><ul>
+                               <li><a href="https://www.facebook.com/compecer1">FACEBOOK</a></li>
+                               <li><a href="https://twitter.com/compecer1">TWITTER</a></li>
+                               <li><a href="https://www.youtube.com/channel/UCVl-Cxho-ExjOp02dylxKwg">YOUTUBE</a></li>
+                           </ul>
+                           
+                           </li>
+                          </nav>
+                           <a href="#">ACERCA DE</a>
+                        </nav>
+                        </div>
+                    </td>
+            </table>
+        </div>
+    </header>
+    
+    <main><!--lo que este aqui dentro será el contenido principal de la web-->
+       <section id="banner">
+         
+          <!--carrusel de imagenes
+           <img src="images/asientos.jpg">-->
+           <div class="w3-display-container">
+          <img class="mySlides" src="images/asientos.jpg" style="width:100%">
+          <img class="mySlides" src="images/cama.jpg" style="width:100%">
+
+          <div class="contenedor"><font color="white"><button class="w3-button  w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button  class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button></font></div>
+        </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+           <!--Boton para musica-->
+           
+           <div class="contenedor">
+           <h2>&nbsp; &nbsp; &nbsp;  &nbsp; <audio src="media/audio.mp3"></audio>
+               <button id="boton" class="icon-play-outline" style="width: 40px; height: 40px; background: grey; color: white" ></button>
+           <script type="text/javascript">
+ var v = document.getElementsByTagName("audio")[0];
+ var sound = false;
+ 
+ var boton = document.getElementById("boton");
+ boton.addEventListener("click", function(){
+	if (!sound) {
+		v.play();
+		this.innerHTML = "";
+		sound = true;
+	} else {
+		v.pause();
+		this.innerHTML = "";
+		sound = false;
+	}
+ });
+ 
+ 
+</script>
+    </h2>  
+    </div>           
+       </section>
+       
+<section id="blog"> <!--Section para FORMULARIOS-->
+           
+           
+               
+<article><!--Primer formulario-->
+<table style="color: white; ">
+<tr>
+    <td>
+        <form name="forma" action="">
+            <fieldset>
+            <legend></legend>
+                <table style="background-image: url(images/fondoForm.jpg); width: 280px;">
+                   <tr>
+                       <td><h2> &nbsp;Ingresar</h2></td>
+                       <td><div><span style="float: right"> <a href="" style="text-decoration: none; color:white" >¡Inscribase ahora!<a href="" class="icon-angle-double-right" style="text-decoration: none; color: white"></a> </a> &nbsp;</span></div></td>
+                   </tr>
+                   <tr>
+                       <td colspan="2"><hr>&nbsp;&nbsp;N° AAdvantage o  ID de usuario</td>
+                   </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;
+                            <input type="text" id="usuario" required style="width: 260px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="" style="text-decoration: none; color: white">&nbsp;&nbsp;¿Necesita su número AAdvantage?<a href="" class="icon-angle-double-right" style="text-decoration: none; color: white"></a> </a>
+                        
+                        </td>
+                    </tr>
+                        <tr>
+                            <td><h6>&nbsp;<hr></h6></td>
+                        </tr>
+                        <tr>
+                       <td colspan="2">&nbsp;&nbsp;Apellido(s)</td>
+                   </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;&nbsp;<input type="text" id="usuario" required style="width: 260px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>&nbsp;<hr></h6></td>
+                    </tr>
+                    <tr>
+                       <td colspan="2">&nbsp;&nbsp;Contraseña</td>
+                   </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;&nbsp;<input type="text" id="usuario" required style="width: 260px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="" style="text-decoration: none; color: white">&nbsp;&nbsp;¿Necesita contraseña?<a href="" class="icon-angle-double-right" style="text-decoration: none; color: white"></a> </a>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>&nbsp;<br><hr><hr></h6></td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td >
+                            &nbsp;&nbsp;<input type="text" id="usuario" required style="width: 20px"> Recordarme &nbsp; &nbsp;
+                        </td>
+                        <td colspan="2">
+                            <input title="enviar la informacion a un servidor" type="submit" style="width: 130px; height: 30px; background: dodgerblue; color: white; margin-bottom: 0;" value="Ingrese">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <h1><br><br><br><br></h1>
+                        </td>
+                    </tr>
+                </table><!--termina tabla anidada-->
+            
+            </fieldset>
+            </form>
+    </td>
+    
+</tr>
+</table><!--Fin formulario 1-->
+
+</article>
+               
+            <article><!--Formulario2 con menu-->
+                 <nav class="menu-form" style="width: 750px">
+                     <ul>
+                         <li><a class="vuelos" href="">Reserve vuelos</a></li>
+                         <li><a href="">Sus viajes/ Check in</a></li>
+                         <li><a href="">Estado del vuelo</a></li>
+                     </ul>
+                 </nav>
+                   <!--contenido de reserve vuelos-->
+                   <p>&nbsp;</p>
+                   <table>
+                   <tr>
+                   <td><input title="enviar la informacion a un servidor" type="submit" style="width: 100px; height: 10; background: dodgerblue; color: white; margin-bottom: 0;" value="Ida y vuelta">
+                   </td>
+                   <td>&nbsp; &nbsp;
+                   <input title="enviar la informacion a un servidor" type="submit" style="width: 70px; height: 25px; background: dodgerblue; color: white; margin-bottom: 0;" value="solo ida">
+                   </td>
+                    </tr>
+                      <tr><td>&nbsp;</td></tr>
+                       <tr >
+                           <td colspan="2">
+                           <input type="text" id="usuario" required style="width: 15px; height: 15px;"> Canjear millas &nbsp; &nbsp;
+                           </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                       <tr>
+                           <td>Salir de <a style="color: red;">*</a></td>
+                           <td> Llegar a <a style="color: red;">*</a></td>
+                           <td>Número de pasajeros</td>
+                       </tr>
+                       <tr>
+                           <td>
+                           <div id="login">
+                           <form>
+                            <div>
+			                <input type="text" name="MEX" placeholder="MEX">
+			                <img src="images/search.jpeg">
+		                    </div>
+                         </form>
+                          </div>
+                           </td>
+                           <td>
+                           <div id="login">
+                           <form>
+                            <div>
+			                <input type="text" name="Ciudad" placeholder="Ciudad o aeropuerto">
+			                <img src="images/search.jpeg">
+		                    </div>
+                         </form>
+                          </div>
+                           </td>
+                           <td>
+                           <div id="login">
+                           <form>
+                            <div>
+			                <input type="text" name="Numero" placeholder="1">
+			                <img src="images/flecha.jpeg">
+		                    </div>
+                         </form>
+                          </div>                          
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>&nbsp;</td>
+                       </tr>
+                       <tr>
+                           <td>&nbsp;</td>
+                       </tr>
+                       <tr>
+                           <td>fecha de salida <a style="color: red;">*</a></td>
+                           <td>fecha de retorno <a style="color: red;">*</a></td>
+                           <td>&nbsp;</td>
+                       </tr>
+                       <tr>
+                           <td>
+                           <div id="login">
+                           <form>
+                            <div>
+			                <input type="text" name="Fecha1" placeholder="26/08/2019">
+			                <img src="images/calendario.jpeg">
+		                    </div>
+                         </form>
+                          </div>
+                           </td>
+                           <td>
+                           <div id="login">
+                           <form>
+                            <div>
+			                <input type="text" name="Fecha2" placeholder="03/10/2019">
+			                <img src="images/calendario.jpeg">
+		                    </div>
+                         </form>
+                          </div>
+                           </td>
+                           
+                           <td>&nbsp; &nbsp; &nbsp; &nbsp;
+                           <input title="Buscar" type="submit" style="width: 200px; height: 50px; height: 10; background: dodgerblue; color: white; margin-bottom: 0;" value="Buscar vuelos">
+                           </td>
+                           
+                       </tr>
+                       <tr><td>&nbsp;</td></tr>
+                       <tr><td>&nbsp;</td></tr>
+                       <tr>
+                           <td><a href="" style="text-decoration: none">Cargos de equipaje y opcionales<a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a></td>
+                           <td>&nbsp;</td>
+                           <td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="" style="text-decoration: none">Búsqueda avanzada<a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a></td>
+                       </tr>
+                       <tr><td colspan="2"><a href="" style="text-decoration: none">Cambios a los cargos y límites permitidos de equipaje registrado<a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a></td></tr>
+                       <tr><td colspan="3">
+                           <a href="" style="text-decoration: none">Cambios a los cargos límites permitidos de equipaje de mano para Económica Básica<a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                       </td></tr>
+                       <tr><td colspan="2">
+                           <a href="" style="text-decoration: none">¿Qué país debo seleccionar al hacer mis reservaciones en aa.com <a href="" class="icon-link-ext" style="text-decoration: none"></a></a>
+                       </td></tr>
+                       <tr><td colspan="2">
+                           <a href="" style="text-decoration: none">Revise las condiciones de compra que aplican en su país <a href="" class="icon-link-ext" style="text-decoration: none"></a></a>
+                       </td></tr>
+                   </table>
+                   
+                   
+                   
+             </article>
+           
+           
+       </section>
+        
+        
+     <!--Formulario 2-->
+     <section id="imagenes">
+         <article>
+             <h3 style="color: grey">Noticias y ofertas</h3>
+             <table><!--Tabla para Noticias y ofertas. Con <p> el espacio era muy amplio-->
+                 <tr>
+                     <td>
+                         <a href="pagina2.html" style="text-decoration: none">Tarjetas CitiBanamex/AAdvantage&reg; en México <a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="" style="text-decoration: none">Reserve en aa.com y pague en su banco <a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="" style="text-decoration: none">Noticias sobre el Boeing 737 MAX (en inglés) <a href="" class="icon-link-ext" style="text-decoration: none"></a></a>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="" style="text-decoration: none">AAdvantage eSummary le da 1,000 millas bono <a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="" class="icon-pencil" style="text-decoration: none"></a>
+                         <a href="" style="text-decoration: none">Más ofertas especiales <a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <a href="" style="text-decoration: none">Autos <a href="" class="icon-link-ext" style="text-decoration: none">| <a href="" style="text-decoration: none">Hoteles <a href="" class="icon-link-ext" style="text-decoration: none"></a></a></a></a>
+                     </td>
+                 </tr>
+                 
+             </table>
+             
+         </article>
+         
+         <article>
+             <h3 style="color: grey">¿Necesita más millas?</h3>
+             <table>
+                 <tr>
+                     <td rowspan="2">
+                         <img class="efecto1"  src="images/millas.jpg" alt="">
+                     </td>
+                     <td>
+                         <p></p>
+                         Ahorre hasra 35% al <br>
+                          comprar millas hasta el <br> 30 de Septiembre
+                         
+                         <p><br>
+                             <a href="" style="text-decoration: none">Compre millas <a href="" class="icon-link-ext" style="text-decoration: none"></a></a>
+                         </p>
+                     </td>
+                  </tr>
+              </table>
+         </article>
+            <article>
+             <h3 style="color: grey">Información importante</h3>
+             <table>
+                 <tr>
+                     <td rowspan="2">
+                         <img class="efecto2" src="images/importe.png" style="height: 110px;">
+                     </td>
+                     <td>
+                        <p></p>
+                         Información importante <br> para tarjetahabientes <br> CitiBanamex / <br>AAdvantage en México
+                         
+                         <p><br>
+                             <a href="" style="text-decoration: none">Sepa más <a href="" class="icon-angle-double-right" style="text-decoration: none"></a></a>
+                         </p>
+                     </td>
+                 </tr>
+             </table>
+             </article>
+         <article>
+             
+         </article>
+     </section>
+    
+        
+    </main>
+     
+     <footer><!--El pie de página (Ayuda, Acerca de, Adicionales)-->
+       <section id="info">
+       <h1>&nbsp;</h1>
+        <div class="contenedor">
+          
+           <article><!--AYUDA-->
+               <h5>Ayuda <hr></h5>
+               <p>Contáctenos</p>
+               <p>Factura Electrónica</p>
+               <p>Recibos y reembolsos</p>
+               <p>Preguntas frecuentes</p>
+               <p>Información para agencias</p>
+               <p>Carga <a class="icon-link-ext"></a></p>
+               <p>Cargos de equipaje y opcionales</p>
+               <p>Planes de Servicio al Cliente y Contingencia</p>
+               <p>Condiciones de transporte</p><hr> 
+           </article>
+           
+           <article><!--ACERCA DE AMERICAN-->
+               <h5>Acerca de American <hr></h5>
+               <p>Acerca de American</p>
+               <p>Empleos <a class="icon-link-ext"></a></p>
+               <p>Relación con inversionistas <a class="icon-link-ext"></a></p>
+               <p>Centro de noticias <a class="icon-link-ext"></a></p>
+               <p>Políticas e información legal </p>
+               <p>Compatibilidad del navegador</p>
+               <p>Accesibilidad del sitio web</p>
+               <p>Mapa del sitio</p>
+               <p>&nbsp;</p><hr>
+           </article>
+           
+           <article><!--ADICIONALES-->
+               <h5>Adicionales <hr></h5>
+               <p>Programas para empresas</p>
+               <p>Pago en cuotas</p>
+               <p>Protección en Viaje</p>
+               <p>CoBrowse</p>
+               <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr>
+           </article>
+           <article>
+               <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+           </article>
+           
+           <article><!--BYUMILES (LOGO)-->
+              
+               <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: blue">Buy</a><a style="color: dodgerblue">Miles</a></h4>
+               <p>Ahorre hasta 35% hasta <br>&nbsp;el 30 de Septiembre <a class="icon-link-ext"></a></p>
+           </article>
+            
+        </div>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="icon-link-ext"></a> Este enlace abre una nueva ventana. El sitio web podría no cumplir con las normas de accesibilidad.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/AmericanAirlines" target="_blank"><img alt="Siguenos en Facebook" src="https://lh3.googleusercontent.com/-NSLbC_ztNls/T6VX0g6z8AI/AAAAAAAAA0A/_vyIBrmZbuY/s48/facebook48.png" width=48 height=48  /></a>
+        <a href="https://www.youtube.com/americanairlines" target="_blank"><img alt="Siguenos en YouTube" src="https://lh6.googleusercontent.com/-Atgpy-x_OwI/T6mYkA18hYI/AAAAAAAAA1U/qksUJ5uBq3c/s48/youtube48.png" width=48 height=48  /></a>
+        <a href="https://twitter.com/americanair" target="_blank"><img src="https://lh6.googleusercontent.com/-vao9pzZoGtk/T6VYC4d1YMI/AAAAAAAAA0U/4rdP2chJido/s48/twitter48.png" width=48 height=48 alt="Síguenos en Twitter" /></a>
+        </p>
+        
+        
+        <h1>&nbsp;</h1>
+    </section>
+     </footer>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

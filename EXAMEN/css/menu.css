@@ -1,0 +1,98 @@
+/*Hoja de estilos solo para el menu*/
+
+#menu-bar {
+    display: none;
+}
+
+header label {/*El que tiene el icono del menú (las rallitas)*/
+    float: right;/*para que flote el icono del menú*/
+    font-size: 28px;
+    margin: 6px 0;/*margen de 6px hacia arriba y cero hacia los costados*/
+    cursor: pointer;/*cuando el mouse pase por el menu, aparecera una manita*/
+}
+
+.menu { /*Solo para poder maquetar*/
+    position: absolute;
+    top: 50px;/*junto con la instruccion de abajo para que comience desde la esquina y desde abajo*/
+    left: 0;
+    width: 100%;
+    height: 100vh;/*ocupara siempre el 100 del alto la ventana*/
+    background: rgba(51,51,51,0,9);/*El 9 es la transparencia (que tan sólodo se ve el color)*/
+    transition: 0.5s;/*como se esta desplazando*/
+    transform: translateX(-100%); /*El menu se va de manera horizontal hacia la izquierda*/
+}
+
+.menu a {
+    display: block; /*El menu aparece hacia abajo*/
+    color: dodgerblue;
+    height: 50px;/*altura de 50 px*/
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0,5);/*color blanco transparente son 5 de transparencia*/
+}
+
+menu a:hover { /*cuando pase el mouse por cada opcion del menu se vera blanco transparente (no sirve de nada)*/
+    background: rgba(255,255,255,0,3);
+}
+
+/*Para que el menu funcione (se seleccione ~) cuando se haga clic en el label*/
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);/*se traslada el menú a su posición original*/
+}
+
+
+
+
+/*Formulario con menu*/
+.menu-form{
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+    background: #D2E3EE;
+}
+
+.menu-form ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+/*El crecimiento de cada elemento de flex*/
+.menu-form li {
+    border-right: 1px solid grey;
+    text-align: center;
+    flex-grow: 1;/*Siempre se va a ocupar todo y se divide el espacio entre cada elemento*/
+}
+
+.menu-form li:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.menu-form li a {
+    display: block;
+    padding: 15px 20px;/*15 hacia arriba y hacia abajo y 20 en los costados*/
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+
+/*Menu horizontal (responsi)*/
+@media (min-width:1024px) {/*Tamaño de la pantalla*/
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    /*
+    .menu a {
+        border: none;
+    }
+    
+    header label {
+        
+        display: none;
+    }*/
+}
